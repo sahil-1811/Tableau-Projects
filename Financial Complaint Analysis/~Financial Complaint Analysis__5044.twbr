@@ -1,0 +1,1481 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0525.0851                               -->
+<workbook original-version='18.1' source-build='2022.1.2 (20221.22.0525.0851)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Financial Consumer Complaints' inline='true' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Financial Consumer Complaints' name='textscan.1ueewl40cp5fxz11ybvby0g3x9kf'>
+            <connection class='textscan' directory='C:/Users/SAHIL MODY/My PC (DESKTOP-4BQN8TG)/Downloads' filename='Financial Consumer Complaints.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ueewl40cp5fxz11ybvby0g3x9kf' name='Financial Consumer Complaints.csv' table='[Financial Consumer Complaints#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Complaint ID' ordinal='0' />
+            <column datatype='date' name='Date Sumbited' ordinal='1' />
+            <column datatype='string' name='Product' ordinal='2' />
+            <column datatype='string' name='Sub-product' ordinal='3' />
+            <column datatype='string' name='Issue' ordinal='4' />
+            <column datatype='string' name='Sub-issue' ordinal='5' />
+            <column datatype='string' name='Company public response' ordinal='6' />
+            <column datatype='string' name='Company' ordinal='7' />
+            <column datatype='string' name='State' ordinal='8' />
+            <column datatype='string' name='ZIP code' ordinal='9' />
+            <column datatype='string' name='Tags' ordinal='10' />
+            <column datatype='string' name='Consumer consent provided?' ordinal='11' />
+            <column datatype='string' name='Submitted via' ordinal='12' />
+            <column datatype='date' name='Date Received' ordinal='13' />
+            <column datatype='string' name='Company response to consumer' ordinal='14' />
+            <column datatype='string' name='Timely response?' ordinal='15' />
+            <column datatype='string' name='Consumer disputed?' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ueewl40cp5fxz11ybvby0g3x9kf' name='Financial Consumer Complaints.csv' table='[Financial Consumer Complaints#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Complaint ID' ordinal='0' />
+            <column datatype='date' name='Date Sumbited' ordinal='1' />
+            <column datatype='string' name='Product' ordinal='2' />
+            <column datatype='string' name='Sub-product' ordinal='3' />
+            <column datatype='string' name='Issue' ordinal='4' />
+            <column datatype='string' name='Sub-issue' ordinal='5' />
+            <column datatype='string' name='Company public response' ordinal='6' />
+            <column datatype='string' name='Company' ordinal='7' />
+            <column datatype='string' name='State' ordinal='8' />
+            <column datatype='string' name='ZIP code' ordinal='9' />
+            <column datatype='string' name='Tags' ordinal='10' />
+            <column datatype='string' name='Consumer consent provided?' ordinal='11' />
+            <column datatype='string' name='Submitted via' ordinal='12' />
+            <column datatype='date' name='Date Received' ordinal='13' />
+            <column datatype='string' name='Company response to consumer' ordinal='14' />
+            <column datatype='string' name='Timely response?' ordinal='15' />
+            <column datatype='string' name='Consumer disputed?' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Complaint ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Complaint ID]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Complaint ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Sumbited</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Sumbited]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Date Sumbited</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sub-product]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Sub-product</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Issue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Issue]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Issue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-issue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sub-issue]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Sub-issue</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company public response</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company public response]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Company public response</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZIP code]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>ZIP code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tags]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Tags</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consumer consent provided?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Consumer consent provided?]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Consumer consent provided?</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Submitted via</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Submitted via]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Submitted via</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Received</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date Received]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Date Received</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company response to consumer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company response to consumer]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Company response to consumer</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timely response?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Timely response?]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Timely response?</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consumer disputed?</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Consumer disputed?]</local-name>
+            <parent-name>[Financial Consumer Complaints.csv]</parent-name>
+            <remote-alias>Consumer disputed?</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='# OF NON MONETARY FUND ' datatype='real' name='[# OF MONETARY FUND (copy)_23643948961210374]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1- [Calculation_23643948959830021]' />
+      </column>
+      <column caption='% Disputed Cutomer' datatype='real' name='[Calculation_1734167382777511936]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Consumer disputed?]=&quot;Yes&quot; THEN [Complaint ID]END)/COUNT([Complaint ID])' />
+      </column>
+      <column caption='Total Complaints' datatype='integer' name='[Calculation_23643948948234240]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED :COUNT([Complaint ID])}' />
+      </column>
+      <column caption='Timely Response %' datatype='real' name='[Calculation_23643948951019521]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='count(IF [Timely response?]=&quot;Yes&quot;THEN [Complaint ID]END)/COUNT([Complaint ID])' />
+      </column>
+      <column caption='No timely response%' datatype='real' name='[Calculation_23643948951478274]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1-[Calculation_23643948951019521]' />
+      </column>
+      <column caption='In Progress' datatype='integer' name='[Calculation_23643948953026563]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(if [Company response to consumer]=&quot;In progress&quot;THEN [Complaint ID]END)' />
+      </column>
+      <column caption='In Progress%' datatype='real' name='[Calculation_23643948953788420]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_23643948953026563]/COUNT([Complaint ID])' />
+      </column>
+      <column caption='# OF MONETARY FUND' datatype='real' name='[Calculation_23643948959830021]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT(IF [Company response to consumer]=&quot;Closed with monetary relief&quot; THEN [Complaint ID]END)/COUNT([Complaint ID])' />
+      </column>
+      <column caption='Max Complaint by category' datatype='integer' name='[Calculation_354939997259956224]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED :MAX({FIXED [Issue]:COUNT([Complaint ID])})}' />
+      </column>
+      <column datatype='integer' name='[Complaint ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Consumer disputed?]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[ZIP code]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Financial Consumer Complaints.csv' datatype='table' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+      <column-instance column='[Consumer disputed?]' derivation='None' name='[none:Consumer disputed?:nk]' pivot='key' type='nominal' />
+      <column-instance column='[# OF MONETARY FUND (copy)_23643948961210374]' derivation='User' name='[usr:# OF MONETARY FUND (copy)_23643948961210374:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_23643948951019521]' derivation='User' name='[usr:Calculation_23643948951019521:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_23643948951478274]' derivation='User' name='[usr:Calculation_23643948951478274:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_23643948959830021]' derivation='User' name='[usr:Calculation_23643948959830021:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#3b9dfc'>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:\# OF MONETARY FUND (copy)_23643948961210374:qk]&quot;</bucket>
+            </map>
+            <map to='#3b9fdc'>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951019521:qk]&quot;</bucket>
+            </map>
+            <map to='#bfbfbf'>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951478274:qk]&quot;</bucket>
+            </map>
+            <map to='#d6d3df'>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948959830021:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Consumer disputed?:nk]' type='palette'>
+            <map to='#260073'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#3b9fdc'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#b7cbc5'>
+              <bucket>&quot;N/A&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Financial Consumer Complaints.csv' id='Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92'>
+            <properties context=''>
+              <relation connection='textscan.1ueewl40cp5fxz11ybvby0g3x9kf' name='Financial Consumer Complaints.csv' table='[Financial Consumer Complaints#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Complaint ID' ordinal='0' />
+                  <column datatype='date' name='Date Sumbited' ordinal='1' />
+                  <column datatype='string' name='Product' ordinal='2' />
+                  <column datatype='string' name='Sub-product' ordinal='3' />
+                  <column datatype='string' name='Issue' ordinal='4' />
+                  <column datatype='string' name='Sub-issue' ordinal='5' />
+                  <column datatype='string' name='Company public response' ordinal='6' />
+                  <column datatype='string' name='Company' ordinal='7' />
+                  <column datatype='string' name='State' ordinal='8' />
+                  <column datatype='string' name='ZIP code' ordinal='9' />
+                  <column datatype='string' name='Tags' ordinal='10' />
+                  <column datatype='string' name='Consumer consent provided?' ordinal='11' />
+                  <column datatype='string' name='Submitted via' ordinal='12' />
+                  <column datatype='date' name='Date Received' ordinal='13' />
+                  <column datatype='string' name='Company response to consumer' ordinal='14' />
+                  <column datatype='string' name='Timely response?' ordinal='15' />
+                  <column datatype='string' name='Consumer disputed?' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Comp. by Product'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#898989' fontsize='10'>COMPLAINTS</run>
+            <run fontalignment='1' fontsize='10'>Æ </run>
+            <run fontalignment='1' fontcolor='#000000' fontsize='10'>BY PRODUCT</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Consumer Complaints' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yk54oc0fr6lmv16hgsya1mgfkn6'>
+            <_.fcp.ObjectModelTableType.false...column caption='Financial Consumer Complaints.csv' datatype='integer' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Financial Consumer Complaints.csv' datatype='table' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Product:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Product:nk]' value='8' />
+            <format attr='font-weight' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Product:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='background-color' id='refline0' value='#ffffff77' />
+            <format attr='stroke-color' id='refline0' value='#8989896f' />
+            <format attr='text-format' id='refline0' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' enable-instant-analytics='true' formula='average' id='refline0' label='Average &lt;Value&gt;' label-type='custom' probability='95' scope='per-table' value-column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#3b9fdc' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Product:nk]</rows>
+        <cols>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]</cols>
+      </table>
+      <simple-id uuid='{3EF3FB94-3EEE-4B28-A611-EBC71B062495}' />
+    </worksheet>
+    <worksheet name='DISPUTE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#898989'>% CUSTOMER </run>
+            <run fontalignment='1' fontname='Tableau Medium'>DISPUTED</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Consumer Complaints' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yk54oc0fr6lmv16hgsya1mgfkn6'>
+            <column caption='MIN(0)' datatype='integer' name='[Calculation_1734167382778994690]' role='measure' type='quantitative' user:unnamed='DISPUTE'>
+              <calculation class='tableau' formula='MIN(0)' />
+            </column>
+            <column caption='MIN(0)' datatype='integer' name='[Calculation_1734167382779023364]' role='measure' type='quantitative' user:unnamed='DISPUTE'>
+              <calculation class='tableau' formula='MIN(0)' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='Financial Consumer Complaints.csv' datatype='integer' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Consumer disputed?]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Financial Consumer Complaints.csv' datatype='table' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Consumer disputed?]' derivation='None' name='[none:Consumer disputed?:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1734167382778994690]' derivation='User' name='[usr:Calculation_1734167382778994690:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1734167382779023364]' derivation='User' name='[usr:Calculation_1734167382779023364:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382779023364:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382778994690:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382779023364:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='band-level' scope='rows' value='0' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382778994690:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Consumer disputed?:nk]' />
+              <size column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' />
+              <text column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' />
+              <text column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Medium'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#d4d4d4'><![CDATA[(<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]>)]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='3.2596685886383057' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382779023364:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='2.3314917087554932' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382778994690:qk] + [federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382779023364:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{54406750-A981-44F2-9894-A4705A77E60D}' />
+    </worksheet>
+    <worksheet name='IN PROGRESS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#666666' fontname='Tableau Book' fontsize='10'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#f28e2b' fontname='Tableau Medium' fontsize='24'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948953026563:qk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Consumer Complaints' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yk54oc0fr6lmv16hgsya1mgfkn6'>
+            <column caption='In Progress' datatype='integer' name='[Calculation_23643948953026563]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(if [Company response to consumer]=&quot;In progress&quot;THEN [Complaint ID]END)' />
+            </column>
+            <column caption='In Progress%' datatype='real' name='[Calculation_23643948953788420]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_23643948953026563]/COUNT([Complaint ID])' />
+            </column>
+            <column datatype='string' name='[Company response to consumer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Complaint ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_23643948953026563]' derivation='User' name='[usr:Calculation_23643948953026563:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948953788420]' derivation='User' name='[usr:Calculation_23643948953788420:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='auto' />
+            <format attr='vertical-align' value='auto' />
+            <format attr='text-align' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948953788420:qk]' value='center' />
+            <format attr='vertical-align' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948953788420:qk]' value='top' />
+            <format attr='text-format' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948953788420:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='cols' value='auto' />
+            <format attr='vertical-align' scope='cols' value='auto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948953788420:qk]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948953026563:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{64B7323E-983A-4ED2-915E-498283BE4BE0}' />
+    </worksheet>
+    <worksheet name='Issue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#898989' fontsize='14'>COMPLAINTS</run>
+            <run fontalignment='1' fontsize='14'>Æ </run>
+            <run fontalignment='1' fontcolor='#000000' fontsize='14'>BY ISSUE</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Consumer Complaints' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yk54oc0fr6lmv16hgsya1mgfkn6'>
+            <column caption='Max Complaint by category' datatype='integer' name='[Calculation_354939997259956224]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED :MAX({FIXED [Issue]:COUNT([Complaint ID])})}' />
+            </column>
+            <column caption='SUM(0)' datatype='integer' name='[Calculation_354939997260984322]' role='measure' type='quantitative' user:unnamed='Issue'>
+              <calculation class='tableau' formula='SUM(0)' />
+            </column>
+            <column datatype='integer' name='[Complaint ID]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Financial Consumer Complaints.csv' datatype='integer' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Issue]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Financial Consumer Complaints.csv' datatype='table' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Issue]' derivation='None' name='[none:Issue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_354939997259956224]' derivation='Sum' name='[sum:Calculation_354939997259956224:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_354939997260984322]' derivation='User' name='[usr:Calculation_354939997260984322:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_354939997260984322:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Issue:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]' field-type='quantitative' fold='true' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[sum:Calculation_354939997259956224:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.0099999997764825821' />
+                <format attr='mark-color' value='#898989' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <path column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='3.4364640712738037' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Issue:nk]</rows>
+        <cols>([federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[sum:Calculation_354939997259956224:qk] + [federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values])</cols>
+      </table>
+      <simple-id uuid='{6244F992-9C07-4842-BCD6-487D9ABEE1C1}' />
+    </worksheet>
+    <worksheet name='Media'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#898989' fontname='Tableau Book' fontsize='14'>COMPLAINTS</run>
+            <run fontalignment='1' fontname='Tableau Book' fontsize='14'>Æ </run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Book' fontsize='14'>BY MEDIA</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Consumer Complaints' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yk54oc0fr6lmv16hgsya1mgfkn6'>
+            <column caption='# OF NON MONETARY FUND ' datatype='real' name='[# OF MONETARY FUND (copy)_23643948961210374]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1- [Calculation_23643948959830021]' />
+            </column>
+            <column caption='% Disputed Cutomer' datatype='real' name='[Calculation_1734167382777511936]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Consumer disputed?]=&quot;Yes&quot; THEN [Complaint ID]END)/COUNT([Complaint ID])' />
+            </column>
+            <column caption='SUM(0)' datatype='integer' name='[Calculation_1734167382786617352]' role='measure' type='quantitative' user:unnamed='Sheet 7'>
+              <calculation class='tableau' formula='SUM(0)' />
+            </column>
+            <column caption='Total Complaints' datatype='integer' name='[Calculation_23643948948234240]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED :COUNT([Complaint ID])}' />
+            </column>
+            <column caption='Timely Response %' datatype='real' name='[Calculation_23643948951019521]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='count(IF [Timely response?]=&quot;Yes&quot;THEN [Complaint ID]END)/COUNT([Complaint ID])' />
+            </column>
+            <column caption='No timely response%' datatype='real' name='[Calculation_23643948951478274]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1-[Calculation_23643948951019521]' />
+            </column>
+            <column caption='In Progress' datatype='integer' name='[Calculation_23643948953026563]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(if [Company response to consumer]=&quot;In progress&quot;THEN [Complaint ID]END)' />
+            </column>
+            <column caption='In Progress%' datatype='real' name='[Calculation_23643948953788420]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_23643948953026563]/COUNT([Complaint ID])' />
+            </column>
+            <column caption='# OF MONETARY FUND' datatype='real' name='[Calculation_23643948959830021]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Company response to consumer]=&quot;Closed with monetary relief&quot; THEN [Complaint ID]END)/COUNT([Complaint ID])' />
+            </column>
+            <column datatype='string' name='[Company response to consumer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Complaint ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Consumer disputed?]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Submitted via]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Financial Consumer Complaints.csv' datatype='integer' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Timely response?]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Financial Consumer Complaints.csv' datatype='table' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Submitted via]' derivation='None' name='[none:Submitted via:nk]' pivot='key' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' derivation='Count' name='[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_23643948948234240]' derivation='Sum' name='[sum:Calculation_23643948948234240:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[# OF MONETARY FUND (copy)_23643948961210374]' derivation='User' name='[usr:# OF MONETARY FUND (copy)_23643948961210374:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1734167382777511936]' derivation='User' name='[usr:Calculation_1734167382777511936:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1734167382786617352]' derivation='User' name='[usr:Calculation_1734167382786617352:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948951019521]' derivation='User' name='[usr:Calculation_23643948951019521:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948951478274]' derivation='User' name='[usr:Calculation_23643948951478274:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948953026563]' derivation='User' name='[usr:Calculation_23643948953026563:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948953788420]' derivation='User' name='[usr:Calculation_23643948953788420:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948959830021]' derivation='User' name='[usr:Calculation_23643948959830021:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382786617352:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948959830021:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:\# OF MONETARY FUND (copy)_23643948961210374:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382777511936:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948953026563:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948953788420:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951478274:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951019521:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[sum:Calculation_23643948948234240:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_1734167382786617352:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Submitted via:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk:2]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='66' />
+            <format attr='cell-h' value='22' />
+            <format attr='cell' value='22' />
+            <format attr='cell-q' value='110' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Submitted via:nk]' value='8' />
+            <format attr='font-weight' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Submitted via:nk]' value='bold' />
+            <format attr='color' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Submitted via:nk]' value='#555555' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk:2]' />
+              <text column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000' fontsize='14'>Submitted via:</run>
+                <run bold='true' fontcolor='#3b9fdc' fontsize='14'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Submitted via:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count of Financial Consumer Complaints.csv:	</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]>]]></run>
+                <run fontcolor='#3b9fdc'>(</run>
+                <run bold='true' fontcolor='#3b9fdc'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk:2]>)]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontcolor='#3b9fdc' fontsize='8'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk:2]>]]></run>
+                <run fontalignment='0' fontsize='8'>|</run>
+                <run fontalignment='0' fontcolor='#898989' fontsize='8'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]>]]></run>
+                <run fontalignment='0'>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='bottom' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.91154694557189941' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#3b9fdc' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk:2]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' />
+              <path column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000' fontsize='14'>Submitted via:</run>
+                <run bold='true' fontcolor='#3b9fdc' fontsize='14'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Submitted via:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[Count of Financial Consumer Complaints.csv:	<]]></run>
+                <run bold='true' fontcolor='#000000'>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]&gt;</run>
+                <run fontcolor='#3b9fdc'>(</run>
+                <run bold='true' fontcolor='#3b9fdc'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[pcto:cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk:2]>)]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='6.9928369522094727' />
+                <format attr='mark-color' value='#b4b4b4' />
+                <format attr='mark-transparency' value='91' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[none:Submitted via:nk]</rows>
+        <cols>([federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk] + [federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values])</cols>
+      </table>
+      <simple-id uuid='{4C794953-8E39-4559-850A-A899365BFF4C}' />
+    </worksheet>
+    <worksheet name='RESOLVED AT NO COST'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#666666' fontname='Tableau Book' fontsize='10'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='24'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:# OF MONETARY FUND (copy)_23643948961210374:qk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Consumer Complaints' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yk54oc0fr6lmv16hgsya1mgfkn6'>
+            <column caption='# OF NON MONETARY FUND ' datatype='real' name='[# OF MONETARY FUND (copy)_23643948961210374]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1- [Calculation_23643948959830021]' />
+            </column>
+            <column caption='# OF MONETARY FUND' datatype='real' name='[Calculation_23643948959830021]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT(IF [Company response to consumer]=&quot;Closed with monetary relief&quot; THEN [Complaint ID]END)/COUNT([Complaint ID])' />
+            </column>
+            <column datatype='string' name='[Company response to consumer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Complaint ID]' role='dimension' type='ordinal' />
+            <column-instance column='[# OF MONETARY FUND (copy)_23643948961210374]' derivation='User' name='[usr:# OF MONETARY FUND (copy)_23643948961210374:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948959830021]' derivation='User' name='[usr:Calculation_23643948959830021:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948959830021:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:\# OF MONETARY FUND (copy)_23643948961210374:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' value='19' />
+            <format attr='text-format' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948959830021:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:# OF MONETARY FUND (copy)_23643948961210374:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#dde7ef</color>
+                <color>#cadeed</color>
+                <color>#b7d6eb</color>
+                <color>#a5cde9</color>
+                <color>#92c4e8</color>
+                <color>#80bce6</color>
+                <color>#6eb3e4</color>
+                <color>#5dabe2</color>
+                <color>#4ca3e0</color>
+                <color>#3b9bdf</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:# OF MONETARY FUND (copy)_23643948961210374:qk]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{BE235A0A-B2E0-4536-BCA8-8F1075639FA1}' />
+    </worksheet>
+    <worksheet name='TIMELY RESPONSE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#666666' fontname='Tableau Book' fontsize='10'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='24'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951019521:qk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Consumer Complaints' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yk54oc0fr6lmv16hgsya1mgfkn6'>
+            <column caption='Timely Response %' datatype='real' name='[Calculation_23643948951019521]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='count(IF [Timely response?]=&quot;Yes&quot;THEN [Complaint ID]END)/COUNT([Complaint ID])' />
+            </column>
+            <column caption='No timely response%' datatype='real' name='[Calculation_23643948951478274]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1-[Calculation_23643948951019521]' />
+            </column>
+            <column datatype='integer' name='[Complaint ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Timely response?]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_23643948951019521]' derivation='User' name='[usr:Calculation_23643948951019521:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948951478274]' derivation='User' name='[usr:Calculation_23643948951478274:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951478274:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951019521:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951019521:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951478274:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[usr:Calculation_23643948951019521:qk]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{119A305C-F215-48B9-B6B7-AED17DB0D973}' />
+    </worksheet>
+    <worksheet name='TOTAL COMPLAINTS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#666666' fontname='Tableau Book' fontsize='10'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Medium' fontsize='24'><![CDATA[<[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[sum:Calculation_23643948948234240:qk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Consumer Complaints' name='federated.0yk54oc0fr6lmv16hgsya1mgfkn6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yk54oc0fr6lmv16hgsya1mgfkn6'>
+            <column caption='Total Complaints' datatype='integer' name='[Calculation_23643948948234240]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED :COUNT([Complaint ID])}' />
+            </column>
+            <column datatype='integer' name='[Complaint ID]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Financial Consumer Complaints.csv' datatype='integer' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date Sumbited]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Financial Consumer Complaints.csv' datatype='table' name='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_23643948948234240]' derivation='Sum' name='[sum:Calculation_23643948948234240:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date Sumbited]' derivation='Month-Trunc' name='[tmn:Date Sumbited:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[tmn:Date Sumbited:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#3b9fdc' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' />
+              <lod column='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[sum:Calculation_23643948948234240:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#3b9fdc' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]</rows>
+        <cols>[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[tmn:Date Sumbited:qk]</cols>
+      </table>
+      <simple-id uuid='{F11EA3D9-D0F2-45BC-99D5-DBA7C024D0FE}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='TOTAL COMPLAINTS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yk54oc0fr6lmv16hgsya1mgfkn6].[__tableau_internal_object_id__].[cnt:Financial Consumer Complaints.csv_A542F937398441DC83A62566C096CB92:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{157060C1-45D7-4056-800A-0860B2B848B7}' />
+    </window>
+    <window class='worksheet' name='TIMELY RESPONSE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6B197209-35C0-4F2C-85D6-907F79B291B7}' />
+    </window>
+    <window class='worksheet' name='IN PROGRESS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{79D6368A-42BA-420E-A706-07B65735B910}' />
+    </window>
+    <window class='worksheet' name='RESOLVED AT NO COST'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{94F85356-07CC-4AC7-8A80-FCE0CCB855AB}' />
+    </window>
+    <window class='worksheet' name='Comp. by Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{40A30928-43CA-412B-BCB6-579D38FC47CE}' />
+    </window>
+    <window class='worksheet' name='DISPUTE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9D3C6A6E-1F64-468D-98A1-01A6A697A07A}' />
+    </window>
+    <window class='worksheet' name='Media'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{50FC7AF7-FE8D-43E4-B2E3-3BDEC4F5FFAE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Issue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D0EA4CF-FE44-4265-A832-38F67F06E21E}' />
+    </window>
+  </windows>
+</workbook>
