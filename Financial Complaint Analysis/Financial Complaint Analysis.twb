@@ -2185,8 +2185,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2350' minheight='2350' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='40' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98400' id='39' param='vert' type-v2='layout-flow' w='98770' x='615' y='800'>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='41' param='vert' type-v2='layout-flow' w='98770' x='615' y='800'>
                 <zone forceUpdate='true' h='6400' id='3' type-v2='text' w='97154' x='1154' y='1200'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='26'>FINANCIAL COMPLAINTS |</run>
@@ -2325,7 +2325,7 @@
       <simple-id uuid='{5B991D25-273E-429A-82A2-C81EE8CE4E84}' />
     </dashboard>
   </dashboards>
-  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+  <windows saved-dpi-scale-factor='1.25' show-side-pane='false' source-height='63'>
     <window class='worksheet' name='TOTAL COMPLAINTS'>
       <cards>
         <edge name='left'>
