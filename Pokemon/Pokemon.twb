@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20221.22.0525.0851                               -->
-<workbook original-version='18.1' source-build='2022.1.2 (20221.22.0525.0851)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2022.1.2 (20221.22.0525.0851)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
@@ -10,6 +10,7 @@
     <IntuitiveSorting_SP2 />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SetMembershipControl />
@@ -19,6 +20,7 @@
     <WorksheetBackgroundTransparency />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='PokemonDataAnalysis_16602227189670' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -33,7 +35,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Pokemon' name='textscan.04mr4iu0myrs8g10ouh7m0pl1w1q'>
-            <connection class='textscan' directory='C:/Users/SAHIL MODY/My PC (DESKTOP-4BQN8TG)/Downloads/archive' filename='Pokemon.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/SAHIL MODY/My PC (DESKTOP-4BQN8TG)/Downloads/archive' filename='Pokemon.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.04mr4iu0myrs8g10ouh7m0pl1w1q' name='Pokemon.csv' table='[Pokemon#csv]' type='table'>
@@ -70,6 +72,7 @@
             <column datatype='boolean' name='Legendary' ordinal='12' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
@@ -303,6 +306,202 @@
       <column-instance column='[Calculation_877076091525550083]' derivation='Sum' name='[sum:Calculation_877076091525550083:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Defense]' derivation='Sum' name='[sum:Defense:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Speed]' derivation='Sum' name='[sum:Speed:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/SAHIL MODY/OneDrive/Documents/My Tableau Repository/Datasources/Pokemon.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/11/2022 12:57:28 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Pokemon' increment-value='%null%' refresh-type='create' rows-inserted='800' timestamp-start='2022-08-11 12:57:27.742' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>#</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[#]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>#</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>721</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type 1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type 1</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type 2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type 2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type 2</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HP</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attack</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Attack]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attack</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Defense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Defense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Defense</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sp. Atk</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sp. Atk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sp. Atk</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sp. Def</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sp. Def]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sp. Def</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>92</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Speed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Speed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Speed</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Generation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Generation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Generation</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Legendary</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Legendary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Legendary</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -372,6 +571,9 @@
                   <column datatype='boolean' name='Legendary' ordinal='12' />
                 </columns>
               </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -1780,7 +1982,7 @@
             </zone>
             <zone h='91305' id='14' param='horz' type-v2='layout-flow' w='99034' x='483' y='7755'>
               <zone h='91305' id='7' type-v2='layout-basic' w='99034' x='483' y='7755'>
-                <zone h='37849' id='3' name='Type1' w='31897' x='33309' y='15159'>
+                <zone h='37851' id='3' name='Type1' w='31901' x='33301' y='15147'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1788,7 +1990,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='37140' id='4' name='Type2' w='34311' x='65206' y='15868'>
+                <zone h='37141' id='4' name='Type2' w='34315' x='65202' y='15857'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1796,7 +1998,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='46052' id='5' name='Overview' w='33938' x='483' y='53008'>
+                <zone h='46062' id='5' name='Overview' w='33934' x='483' y='52998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1804,7 +2006,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='39913' id='6' name='Attack' w='21530' x='34421' y='59147'>
+                <zone h='39922' id='6' name='Attack' w='21526' x='34417' y='59138'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1812,7 +2014,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='39937' id='11' name='Defence' w='22229' x='55951' y='59123'>
+                <zone h='39946' id='11' name='Defence' w='22233' x='55943' y='59114'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1820,7 +2022,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='39937' id='12' name='Speed' w='21337' x='78180' y='59123'>
+                <zone h='39946' id='12' name='Speed' w='21341' x='78176' y='59114'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1828,7 +2030,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7442' id='15' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' type-v2='filter' values='database' w='32826' x='483' y='7755'>
+                <zone h='7428' id='15' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' type-v2='filter' values='database' w='32818' x='483' y='7755'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1836,7 +2038,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='8113' id='16' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' type-v2='filter' values='database' w='17140' x='65206' y='7755'>
+                <zone h='8102' id='16' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' type-v2='filter' values='database' w='17140' x='65202' y='7755'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1844,8 +2046,8 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='160' h='8113' id='13' is-fixed='true' param='vert' type-v2='layout-flow' w='17171' x='82346' y='7755'>
-                  <zone h='7168' id='17' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' type-v2='filter' values='database' w='17171' x='82346' y='7755'>
+                <zone fixed-size='160' h='8102' id='13' is-fixed='true' param='vert' type-v2='layout-flow' w='17175' x='82342' y='7755'>
+                  <zone h='7168' id='17' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' type-v2='filter' values='database' w='17175' x='82342' y='7755'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -1854,7 +2056,7 @@
                     </zone-style>
                   </zone>
                 </zone>
-                <zone h='6139' id='23' name='Avg Attack' show-title='false' w='21530' x='34421' y='53008'>
+                <zone h='6140' id='23' name='Avg Attack' show-title='false' w='21526' x='34417' y='52998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1862,7 +2064,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='6115' id='24' name='Avg Defence' show-title='false' w='22229' x='55951' y='53008'>
+                <zone h='6116' id='24' name='Avg Defence' show-title='false' w='22233' x='55943' y='52998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1870,7 +2072,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='6115' id='25' name='Avg Speed' show-title='false' w='21337' x='78180' y='53008'>
+                <zone h='6116' id='25' name='Avg Speed' show-title='false' w='21341' x='78176' y='52998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1878,7 +2080,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='37811' id='39' name='Generations' w='32826' x='483' y='15197'>
+                <zone h='37815' id='39' name='Generations' w='32818' x='483' y='15183'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1886,7 +2088,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7404' id='40' mode='dropdown' name='Type1' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' type-v2='filter' values='database' w='31897' x='33309' y='7755'>
+                <zone h='7392' id='40' mode='dropdown' name='Type1' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' type-v2='filter' values='database' w='31901' x='33301' y='7755'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1919,8 +2121,8 @@
           </layout-options>
           <size maxheight='2800' minheight='2800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98120' id='43' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+            <zone h='100000' id='50' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='49' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
                 <zone fixed-size='50' h='6815' id='22' type-v2='title' w='99034' x='483' y='940'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1930,7 +2132,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='7404' id='40' mode='dropdown' name='Type1' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' type-v2='filter' values='database' w='31897' x='33309' y='7755'>
+                <zone h='7392' id='40' mode='dropdown' name='Type1' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' type-v2='filter' values='database' w='31901' x='33301' y='7755'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1939,7 +2141,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='37849' id='3' is-fixed='true' name='Type1' w='31897' x='33309' y='15159'>
+                <zone fixed-size='280' h='37851' id='3' is-fixed='true' name='Type1' w='31901' x='33301' y='15147'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1948,7 +2150,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='37811' id='39' is-fixed='true' name='Generations' w='32826' x='483' y='15197'>
+                <zone fixed-size='280' h='37815' id='39' is-fixed='true' name='Generations' w='32818' x='483' y='15183'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1957,7 +2159,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='37140' id='4' is-fixed='true' name='Type2' w='34311' x='65206' y='15868'>
+                <zone fixed-size='280' h='37141' id='4' is-fixed='true' name='Type2' w='34315' x='65202' y='15857'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1966,7 +2168,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='46052' id='5' is-fixed='true' name='Overview' w='33938' x='483' y='53008'>
+                <zone fixed-size='280' h='46062' id='5' is-fixed='true' name='Overview' w='33934' x='483' y='52998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1975,7 +2177,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='41' h='6139' id='23' is-fixed='true' name='Avg Attack' show-title='false' w='21530' x='34421' y='53008'>
+                <zone fixed-size='41' h='6140' id='23' is-fixed='true' name='Avg Attack' show-title='false' w='21526' x='34417' y='52998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1984,7 +2186,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='41' h='6115' id='24' is-fixed='true' name='Avg Defence' show-title='false' w='22229' x='55951' y='53008'>
+                <zone fixed-size='41' h='6116' id='24' is-fixed='true' name='Avg Defence' show-title='false' w='22233' x='55943' y='52998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1993,7 +2195,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='41' h='6115' id='25' is-fixed='true' name='Avg Speed' show-title='false' w='21337' x='78180' y='53008'>
+                <zone fixed-size='41' h='6116' id='25' is-fixed='true' name='Avg Speed' show-title='false' w='21341' x='78176' y='52998'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2002,7 +2204,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='39937' id='11' is-fixed='true' name='Defence' w='22229' x='55951' y='59123'>
+                <zone fixed-size='280' h='39946' id='11' is-fixed='true' name='Defence' w='22233' x='55943' y='59114'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2011,7 +2213,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='39937' id='12' is-fixed='true' name='Speed' w='21337' x='78180' y='59123'>
+                <zone fixed-size='280' h='39946' id='12' is-fixed='true' name='Speed' w='21341' x='78176' y='59114'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2020,7 +2222,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='7442' id='15' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' type-v2='filter' values='database' w='32826' x='483' y='7755'>
+                <zone h='7428' id='15' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' type-v2='filter' values='database' w='32818' x='483' y='7755'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2029,7 +2231,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='8113' id='16' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' type-v2='filter' values='database' w='17140' x='65206' y='7755'>
+                <zone h='8102' id='16' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' type-v2='filter' values='database' w='17140' x='65202' y='7755'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2038,7 +2240,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='7168' id='17' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' type-v2='filter' values='database' w='17171' x='82346' y='7755'>
+                <zone h='7168' id='17' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' type-v2='filter' values='database' w='17175' x='82342' y='7755'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2047,7 +2249,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='39913' id='6' is-fixed='true' name='Attack' w='21530' x='34421' y='59147'>
+                <zone fixed-size='280' h='39922' id='6' is-fixed='true' name='Attack' w='21526' x='34417' y='59138'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2397,7 +2599,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='15' />
       <simple-id uuid='{3AA11841-179E-4E3A-AA97-CAE218A1725A}' />
     </window>
     <window class='worksheet' name='Avg Attack'>
