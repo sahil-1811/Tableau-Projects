@@ -1,0 +1,2638 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0525.0851                               -->
+<workbook original-version='18.1' source-build='2022.1.2 (20221.22.0525.0851)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Pokemon' inline='true' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Pokemon' name='textscan.04mr4iu0myrs8g10ouh7m0pl1w1q'>
+            <connection class='textscan' directory='C:/Users/SAHIL MODY/My PC (DESKTOP-4BQN8TG)/Downloads/archive' filename='Pokemon.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.04mr4iu0myrs8g10ouh7m0pl1w1q' name='Pokemon.csv' table='[Pokemon#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='#' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Type 1' ordinal='2' />
+            <column datatype='string' name='Type 2' ordinal='3' />
+            <column datatype='integer' name='Total' ordinal='4' />
+            <column datatype='integer' name='HP' ordinal='5' />
+            <column datatype='integer' name='Attack' ordinal='6' />
+            <column datatype='integer' name='Defense' ordinal='7' />
+            <column datatype='integer' name='Sp. Atk' ordinal='8' />
+            <column datatype='integer' name='Sp. Def' ordinal='9' />
+            <column datatype='integer' name='Speed' ordinal='10' />
+            <column datatype='integer' name='Generation' ordinal='11' />
+            <column datatype='boolean' name='Legendary' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.04mr4iu0myrs8g10ouh7m0pl1w1q' name='Pokemon.csv' table='[Pokemon#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='#' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Type 1' ordinal='2' />
+            <column datatype='string' name='Type 2' ordinal='3' />
+            <column datatype='integer' name='Total' ordinal='4' />
+            <column datatype='integer' name='HP' ordinal='5' />
+            <column datatype='integer' name='Attack' ordinal='6' />
+            <column datatype='integer' name='Defense' ordinal='7' />
+            <column datatype='integer' name='Sp. Atk' ordinal='8' />
+            <column datatype='integer' name='Sp. Def' ordinal='9' />
+            <column datatype='integer' name='Speed' ordinal='10' />
+            <column datatype='integer' name='Generation' ordinal='11' />
+            <column datatype='boolean' name='Legendary' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>#</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[#]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>#</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type 1]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Type 1</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type 2]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Type 2</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Total</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HP]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>HP</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attack</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attack]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Attack</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Defense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Defense]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Defense</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sp. Atk</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sp. Atk]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Sp. Atk</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sp. Def</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sp. Def]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Sp. Def</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Speed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Speed]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Speed</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Generation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Generation]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Generation</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Legendary</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Legendary]</local-name>
+            <parent-name>[Pokemon.csv]</parent-name>
+            <remote-alias>Legendary</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Attack]' role='measure' type='quantitative' />
+      <column caption='Index' datatype='integer' name='[Calculation_1379508926290034688]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Total ADS' datatype='integer' name='[Calculation_877076091525152768]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Attack]+[Defense]+[Speed]' />
+      </column>
+      <column caption='Total - Attack' datatype='integer' name='[Calculation_877076091525402625]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Total]-[Attack]' />
+      </column>
+      <column caption='Total - Defence' datatype='integer' name='[Calculation_877076091525464066]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Total]-[Defense]' />
+      </column>
+      <column caption='Total - Speed' datatype='integer' name='[Calculation_877076091525550083]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Total]-[Speed]' />
+      </column>
+      <column datatype='integer' name='[Defense]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='1' value='First' />
+          <alias key='2' value='Second' />
+          <alias key='3' value='Third' />
+          <alias key='4' value='Fourth' />
+          <alias key='5' value='Fifth' />
+          <alias key='6' value='Sixth' />
+        </aliases>
+      </column>
+      <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Speed]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value='Not Available' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Pokemon.csv' datatype='table' name='[__tableau_internal_object_id__].[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]' role='measure' type='quantitative' />
+      <column-instance column='[Attack]' derivation='Avg' name='[avg:Attack:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Defense]' derivation='Avg' name='[avg:Defense:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Speed]' derivation='Avg' name='[avg:Speed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Attack]' derivation='Sum' name='[sum:Attack:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_877076091525402625]' derivation='Sum' name='[sum:Calculation_877076091525402625:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_877076091525464066]' derivation='Sum' name='[sum:Calculation_877076091525464066:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_877076091525550083]' derivation='Sum' name='[sum:Calculation_877076091525550083:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Defense]' derivation='Sum' name='[sum:Defense:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Speed]' derivation='Sum' name='[sum:Speed:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/SAHIL MODY/OneDrive/Documents/My Tableau Repository/Datasources/Pokemon.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/11/2022 12:57:28 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='Pokemon' increment-value='%null%' refresh-type='create' rows-inserted='800' timestamp-start='2022-08-11 12:57:27.742' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>#</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[#]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>#</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>721</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type 1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type 1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type 1</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type 2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type 2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type 2</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[HP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HP</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Attack</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Attack]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attack</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Defense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Defense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Defense</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sp. Atk</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sp. Atk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sp. Atk</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sp. Def</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sp. Def]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sp. Def</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>92</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Speed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Speed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Speed</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>108</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Generation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Generation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Generation</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Legendary</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Legendary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Legendary</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Pokemon.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Legendary:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#0000be'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Speed:qk]&quot;</bucket>
+            </map>
+            <map to='#0000be'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]&quot;</bucket>
+            </map>
+            <map to='#00cb00'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Defense:qk]&quot;</bucket>
+            </map>
+            <map to='#00cb00'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]&quot;</bucket>
+            </map>
+            <map to='#cecece'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Calculation_877076091525402625:qk]&quot;</bucket>
+            </map>
+            <map to='#cecece'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Calculation_877076091525464066:qk]&quot;</bucket>
+            </map>
+            <map to='#cecece'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Calculation_877076091525550083:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f00a02'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Attack:qk]&quot;</bucket>
+            </map>
+            <map to='#f00a02'>
+              <bucket>&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Pokemon.csv' id='Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB'>
+            <properties context=''>
+              <relation connection='textscan.04mr4iu0myrs8g10ouh7m0pl1w1q' name='Pokemon.csv' table='[Pokemon#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='#' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Type 1' ordinal='2' />
+                  <column datatype='string' name='Type 2' ordinal='3' />
+                  <column datatype='integer' name='Total' ordinal='4' />
+                  <column datatype='integer' name='HP' ordinal='5' />
+                  <column datatype='integer' name='Attack' ordinal='6' />
+                  <column datatype='integer' name='Defense' ordinal='7' />
+                  <column datatype='integer' name='Sp. Atk' ordinal='8' />
+                  <column datatype='integer' name='Sp. Def' ordinal='9' />
+                  <column datatype='integer' name='Speed' ordinal='10' />
+                  <column datatype='integer' name='Generation' ordinal='11' />
+                  <column datatype='boolean' name='Legendary' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Attack'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column datatype='integer' name='[Attack]' role='measure' type='quantitative' />
+            <column caption='Total - Attack' datatype='integer' name='[Calculation_877076091525402625]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total]-[Attack]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='First' />
+                <alias key='2' value='Second' />
+                <alias key='3' value='Third' />
+                <alias key='4' value='Fourth' />
+                <alias key='5' value='Fifth' />
+                <alias key='6' value='Sixth' />
+              </aliases>
+            </column>
+            <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Available' />
+              </aliases>
+            </column>
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 2]' derivation='None' name='[none:Type 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attack]' derivation='Sum' name='[sum:Attack:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_877076091525402625]' derivation='Sum' name='[sum:Calculation_877076091525402625:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Calculation_877076091525402625:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Generation:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Legendary:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Type 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Type 2:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='1' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]' value='auto' />
+            <format attr='vertical-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]' value='center' />
+            <format attr='vertical-align' value='auto' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]' />
+              <wedge-size column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='3.0386741161346436' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&#10;&#10;&#10;&#10;&lt;</run>
+                <run>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='15' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2.2872927188873291' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk] + [federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{16EB99BA-F5F3-4607-AE5B-039EF8363301}' />
+    </worksheet>
+    <worksheet name='Avg Attack'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column datatype='integer' name='[Attack]' role='measure' type='quantitative' />
+            <column-instance column='[Attack]' derivation='Avg' name='[avg:Attack:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f00a02' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Attack:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='14'>Avg Attack : </run>
+                <run fontcolor='#ffffff' fontsize='14'><![CDATA[<[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Attack:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0DECFAB0-D42A-4925-B7B8-BD8271B16286}' />
+    </worksheet>
+    <worksheet name='Avg Defence'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column datatype='integer' name='[Defense]' role='measure' type='quantitative' />
+            <column-instance column='[Defense]' derivation='Avg' name='[avg:Defense:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00cb00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Defense:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='14'>Avg Defence :</run>
+                <run fontcolor='#ffffff' fontsize='14'><![CDATA[<[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Defense:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B66AFADD-EE38-4B92-A0D0-3BA33C44DBAB}' />
+    </worksheet>
+    <worksheet name='Avg Speed'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column datatype='integer' name='[Speed]' role='measure' type='quantitative' />
+            <column-instance column='[Speed]' derivation='Avg' name='[avg:Speed:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#0000be' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Speed:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='14'>Avg Speed :</run>
+                <run fontcolor='#ffffff' fontsize='14'><![CDATA[<[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:Speed:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{005D985A-0B5D-4D46-8ED4-7EB7D6D3748F}' />
+    </worksheet>
+    <worksheet name='Defence'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column caption='Total - Defence' datatype='integer' name='[Calculation_877076091525464066]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total]-[Defense]' />
+            </column>
+            <column datatype='integer' name='[Defense]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='First' />
+                <alias key='2' value='Second' />
+                <alias key='3' value='Third' />
+                <alias key='4' value='Fourth' />
+                <alias key='5' value='Fifth' />
+                <alias key='6' value='Sixth' />
+              </aliases>
+            </column>
+            <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Available' />
+              </aliases>
+            </column>
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 2]' derivation='None' name='[none:Type 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_877076091525464066]' derivation='Sum' name='[sum:Calculation_877076091525464066:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Defense]' derivation='Sum' name='[sum:Defense:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Calculation_877076091525464066:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Generation:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Legendary:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Type 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Type 2:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='1' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]' />
+              <wedge-size column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='2.9060773849487305' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&#10;&#10;&#10;&lt;</run>
+                <run>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='15' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.1104972362518311' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk] + [federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FF034A67-A349-4466-B63E-4B06E456C7DF}' />
+    </worksheet>
+    <worksheet name='Generations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Generations</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='First' />
+                <alias key='2' value='Second' />
+                <alias key='3' value='Third' />
+                <alias key='4' value='Fourth' />
+                <alias key='5' value='Fifth' />
+                <alias key='6' value='Sixth' />
+              </aliases>
+            </column>
+            <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Pokemon.csv' datatype='integer' name='[__tableau_internal_object_id__].[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Available' />
+              </aliases>
+            </column>
+            <_.fcp.ObjectModelTableType.true...column caption='Pokemon.csv' datatype='table' name='[__tableau_internal_object_id__].[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 2]' derivation='None' name='[none:Type 2:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' direction='ASC' />
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Legendary:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Type 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Type 2:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[__tableau_internal_object_id__].[cnt:Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB:qk]' field-type='quantitative' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[__tableau_internal_object_id__].[cnt:Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' value='#000000' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[__tableau_internal_object_id__].[cnt:Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB:qk]' value='#ffcb05' />
+            <format attr='font-weight' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[__tableau_internal_object_id__].[cnt:Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[__tableau_internal_object_id__].[cnt:Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB:qk]' value='#ffcb05' />
+            <format attr='text-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' value='left' />
+            <format attr='font-weight' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' value='bold' />
+            <format attr='font-size' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' value='9' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[__tableau_internal_object_id__].[cnt:Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffcb05' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]</rows>
+        <cols>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[__tableau_internal_object_id__].[cnt:Pokemon.csv_6F1D806C6F8043BA9263F78AAC8800AB:qk]</cols>
+      </table>
+      <simple-id uuid='{0AD2F573-D818-48BC-B49C-7568420BD7BA}' />
+    </worksheet>
+    <worksheet name='Names'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column caption='Index' datatype='integer' name='[Calculation_1379508926290034688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='First' />
+                <alias key='2' value='Second' />
+                <alias key='3' value='Third' />
+                <alias key='4' value='Fourth' />
+                <alias key='5' value='Fifth' />
+                <alias key='6' value='Sixth' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[HP]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Available' />
+              </aliases>
+            </column>
+            <column-instance column='[HP]' derivation='Avg' name='[avg:HP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 2]' derivation='None' name='[none:Type 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1379508926290034688]' derivation='User' name='[usr:Calculation_1379508926290034688:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:HP:qk]' included-values='in-range'>
+            <min>2.0</min>
+            <max>255.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Generation:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Legendary:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Type 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Type 2:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[usr:Calculation_1379508926290034688:qk:1]' included-values='in-range'>
+            <min>1</min>
+            <max>5</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[usr:Calculation_1379508926290034688:qk:1]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[avg:HP:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' field-type='quantitative' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='#ffcb05' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' value='#ffcb05' />
+            <format attr='text-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' value='left' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='#ffcb05' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffcb05' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffcb05' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]</rows>
+        <cols>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]</cols>
+      </table>
+      <simple-id uuid='{53ED7442-4125-45DA-A8EF-A57FF2668267}' />
+    </worksheet>
+    <worksheet name='Overview'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column datatype='integer' name='[Attack]' role='measure' type='quantitative' />
+            <column caption='Index' datatype='integer' name='[Calculation_1379508926290034688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Defense]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='First' />
+                <alias key='2' value='Second' />
+                <alias key='3' value='Third' />
+                <alias key='4' value='Fourth' />
+                <alias key='5' value='Fifth' />
+                <alias key='6' value='Sixth' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[HP]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sp. Atk]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Sp. Def]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Speed]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Available' />
+              </aliases>
+            </column>
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 2]' derivation='None' name='[none:Type 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Attack]' derivation='Sum' name='[sum:Attack:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Defense]' derivation='Sum' name='[sum:Defense:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[HP]' derivation='Sum' name='[sum:HP:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sp. Atk]' derivation='Sum' name='[sum:Sp. Atk:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sp. Def]' derivation='Sum' name='[sum:Sp. Def:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Speed]' derivation='Sum' name='[sum:Speed:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1379508926290034688]' derivation='User' name='[usr:Calculation_1379508926290034688:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Generation:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Legendary:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' direction='DESC' using='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' />
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Type 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Type 2:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[usr:Calculation_1379508926290034688:qk:1]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[usr:Calculation_1379508926290034688:qk:1]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' value='228' />
+            <format attr='width' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:ok]' value='76' />
+            <format attr='width' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:ok]' value='72' />
+            <format attr='width' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:ok]' value='64' />
+            <format attr='width' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:HP:ok]' value='64' />
+            <format attr='width' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Sp. Atk:ok]' value='68' />
+            <format attr='width' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Sp. Def:ok]' value='100' />
+            <format attr='background-color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:ok]' value='#333333' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#ffcb05' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' value='left' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:ok]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:ok]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:ok]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:HP:ok]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Sp. Atk:ok]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Sp. Def:ok]' value='#ffcb05' />
+            <format attr='font-weight' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' value='bold' />
+            <format attr='font-size' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk]' value='9' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Name:nk] / ([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Attack:ok] / ([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Defense:ok] / ([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:ok] / ([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:HP:ok] / ([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Sp. Atk:ok] / [federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Sp. Def:ok]))))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{21BCDC8C-0B2A-4992-8039-DE892751CAB3}' />
+    </worksheet>
+    <worksheet name='Speed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column caption='Total - Speed' datatype='integer' name='[Calculation_877076091525550083]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Total]-[Speed]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='First' />
+                <alias key='2' value='Second' />
+                <alias key='3' value='Third' />
+                <alias key='4' value='Fourth' />
+                <alias key='5' value='Fifth' />
+                <alias key='6' value='Sixth' />
+              </aliases>
+            </column>
+            <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Speed]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Available' />
+              </aliases>
+            </column>
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 2]' derivation='None' name='[none:Type 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_877076091525550083]' derivation='Sum' name='[sum:Calculation_877076091525550083:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Speed]' derivation='Sum' name='[sum:Speed:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Calculation_877076091525550083:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Generation:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Legendary:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:Type 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Type 2:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='1' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='1' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='3.5690608024597168' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]' />
+              <wedge-size column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='2.8618783950805664' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&#10;&#10;&#10;&lt;</run>
+                <run>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='15' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.066298246383667' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk] + [federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Speed:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D54B86F4-1D98-4843-B4C1-CEA2A9FBA089}' />
+    </worksheet>
+    <worksheet name='Type1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column caption='Index' datatype='integer' name='[Calculation_1379508926290034688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='First' />
+                <alias key='2' value='Second' />
+                <alias key='3' value='Third' />
+                <alias key='4' value='Fourth' />
+                <alias key='5' value='Fifth' />
+                <alias key='6' value='Sixth' />
+              </aliases>
+            </column>
+            <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1379508926290034688]' derivation='User' name='[usr:Calculation_1379508926290034688:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Generation:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Legendary:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[usr:Calculation_1379508926290034688:qk:1]' included-values='in-range'>
+            <min>1</min>
+            <max>5</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[usr:Calculation_1379508926290034688:qk:1]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' field-type='quantitative' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='n#,##0,.0K;-#,##0,.0K' />
+            <format attr='text-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='auto' />
+            <format attr='vertical-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='auto' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='#ffcb05' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' value='center' />
+            <format attr='wrap' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' value='auto' />
+            <format attr='text-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' value='left' />
+            <format attr='font-weight' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' value='bold' />
+            <format attr='font-family' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' value='Tableau Medium' />
+            <format attr='font-size' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' value='8' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='#ffcb05' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='2'>&lt;</run>
+                <run fontalignment='2'>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]</run>
+                <run fontalignment='2'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffcb05' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ffcb05' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]</rows>
+        <cols>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]</cols>
+      </table>
+      <simple-id uuid='{9B3F1A28-55E2-4938-9A9D-16AF97E1E68A}' />
+    </worksheet>
+    <worksheet name='Type2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+            <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1' value='First' />
+                <alias key='2' value='Second' />
+                <alias key='3' value='Third' />
+                <alias key='4' value='Fourth' />
+                <alias key='5' value='Fifth' />
+                <alias key='6' value='Sixth' />
+              </aliases>
+            </column>
+            <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value='Not Available' />
+              </aliases>
+            </column>
+            <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type 2]' derivation='None' name='[none:Type 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total]' derivation='Sum' name='[sum:Total:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Generation:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' filter-group='7'>
+            <groupfilter function='level-members' level='[none:Legendary:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Total])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Type 1:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Total])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Type 2:nk]' member='%null%' />
+                  <groupfilter from='&quot;Dark&quot;' function='range' level='[none:Type 2:nk]' to='&quot;Ice&quot;' />
+                  <groupfilter from='&quot;Poison&quot;' function='range' level='[none:Type 2:nk]' to='&quot;Water&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]</column>
+            <column>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' field-type='quantitative' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='#ffcb05' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' value='8' />
+            <format attr='font-family' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' value='Tableau Medium' />
+            <format attr='font-weight' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' value='bold' />
+            <format attr='text-align' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' value='left' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' value='#ffcb05' />
+            <format attr='color' field='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' value='#ffcb05' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffcb05' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffcb05' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]</rows>
+        <cols>[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[sum:Total:qk]</cols>
+      </table>
+      <simple-id uuid='{778D2AD8-519A-4048-9CC9-D3FF8FA5B08C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='24'>Pokemon Data Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#b4b4b4' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='color' value='#ffffff' />
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Pokemon' name='federated.0chhjyf1muzhj412kaf1w0pdt6kc' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0chhjyf1muzhj412kaf1w0pdt6kc'>
+        <column aggregation='Sum' datatype='integer' name='[Generation]' role='dimension' type='ordinal'>
+          <aliases>
+            <alias key='1' value='First' />
+            <alias key='2' value='Second' />
+            <alias key='3' value='Third' />
+            <alias key='4' value='Fourth' />
+            <alias key='5' value='Fifth' />
+            <alias key='6' value='Sixth' />
+          </aliases>
+        </column>
+        <column datatype='boolean' name='[Legendary]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Type 1]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Type 2]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='%null%' value='Not Available' />
+          </aliases>
+        </column>
+        <column-instance column='[Generation]' derivation='None' name='[none:Generation:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Legendary]' derivation='None' name='[none:Legendary:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Type 1]' derivation='None' name='[none:Type 1:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Type 2]' derivation='None' name='[none:Type 2:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98120' id='21' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+            <zone fixed-size='50' h='6815' id='22' is-fixed='true' type-v2='title' w='99034' x='483' y='940'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91305' id='14' param='horz' type-v2='layout-flow' w='99034' x='483' y='7755'>
+              <zone h='91305' id='7' type-v2='layout-basic' w='99034' x='483' y='7755'>
+                <zone h='37849' id='3' name='Type1' w='31899' x='33305' y='15153'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='37140' id='4' name='Type2' w='34313' x='65204' y='15862'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46058' id='5' name='Overview' w='33936' x='483' y='53002'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='39917' id='6' name='Attack' w='21528' x='34419' y='59143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='39941' id='11' name='Defence' w='22231' x='55947' y='59119'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='39941' id='12' name='Speed' w='21339' x='78178' y='59119'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='7434' id='15' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' type-v2='filter' values='database' w='32822' x='483' y='7755'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8107' id='16' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' type-v2='filter' values='database' w='17140' x='65204' y='7755'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='160' h='8107' id='13' is-fixed='true' param='vert' type-v2='layout-flow' w='17173' x='82344' y='7755'>
+                  <zone h='7168' id='17' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' type-v2='filter' values='database' w='17173' x='82344' y='7755'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='6141' id='23' name='Avg Attack' show-title='false' w='21528' x='34419' y='53002'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6117' id='24' name='Avg Defence' show-title='false' w='22231' x='55947' y='53002'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6117' id='25' name='Avg Speed' show-title='false' w='21339' x='78178' y='53002'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='37813' id='39' name='Generations' w='32822' x='483' y='15189'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='7398' id='40' mode='dropdown' name='Type1' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' type-v2='filter' values='database' w='31899' x='33305' y='7755'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='12573' id='28' is-scaled='1' param='C:/Users/SAHIL MODY/OneDrive/Desktop/Tableau Projects/Pokemon/images (1).jpg' type-v2='bitmap' w='5456' x='42585' y='73561' />
+        <zone h='10458' id='29' is-scaled='1' param='C:/Users/SAHIL MODY/OneDrive/Desktop/Tableau Projects/Pokemon/download.jpg' type-v2='bitmap' w='5138' x='86123' y='74148' />
+        <zone h='11868' id='30' is-scaled='1' param='C:/Users/SAHIL MODY/OneDrive/Desktop/Tableau Projects/Pokemon/images (3).jpg' type-v2='bitmap' w='5975' x='64212' y='74266' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='24'>Pokemon Data Analysis</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2800' minheight='2800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='43' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone fixed-size='50' h='6815' id='22' type-v2='title' w='99034' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7404' id='40' mode='dropdown' name='Type1' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Generation:ok]' type-v2='filter' values='database' w='31897' x='33309' y='7755'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37849' id='3' is-fixed='true' name='Type1' w='31897' x='33309' y='15159'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37811' id='39' is-fixed='true' name='Generations' w='32826' x='483' y='15197'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37140' id='4' is-fixed='true' name='Type2' w='34311' x='65206' y='15868'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46052' id='5' is-fixed='true' name='Overview' w='33938' x='483' y='53008'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6139' id='23' is-fixed='true' name='Avg Attack' show-title='false' w='21530' x='34421' y='53008'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6115' id='24' is-fixed='true' name='Avg Defence' show-title='false' w='22229' x='55951' y='53008'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6115' id='25' is-fixed='true' name='Avg Speed' show-title='false' w='21337' x='78180' y='53008'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39937' id='11' is-fixed='true' name='Defence' w='22229' x='55951' y='59123'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39937' id='12' is-fixed='true' name='Speed' w='21337' x='78180' y='59123'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7442' id='15' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Legendary:nk]' type-v2='filter' values='database' w='32826' x='483' y='7755'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8113' id='16' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 1:nk]' type-v2='filter' values='database' w='17140' x='65206' y='7755'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7168' id='17' mode='dropdown' name='Attack' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[none:Type 2:nk]' type-v2='filter' values='database' w='17171' x='82346' y='7755'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39913' id='6' is-fixed='true' name='Attack' w='21530' x='34421' y='59147'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='12573' id='28' is-fixed='true' is-scaled='1' param='C:/Users/SAHIL MODY/OneDrive/Desktop/Tableau Projects/Pokemon/images (1).jpg' type-v2='bitmap' w='5456' x='42585' y='73561'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='84' h='10458' id='29' is-fixed='true' is-scaled='1' param='C:/Users/SAHIL MODY/OneDrive/Desktop/Tableau Projects/Pokemon/download.jpg' type-v2='bitmap' w='5138' x='86123' y='74148'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='95' h='11868' id='30' is-fixed='true' is-scaled='1' param='C:/Users/SAHIL MODY/OneDrive/Desktop/Tableau Projects/Pokemon/images (3).jpg' type-v2='bitmap' w='5975' x='64212' y='74266'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D0D138D8-3289-4C14-B659-4F69BF6B2C92}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Attack'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{68F6FF54-3946-4765-861A-62F2C9BD6A21}' />
+    </window>
+    <window class='worksheet' name='Defence'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{61F1C6F4-3012-41BE-B100-FE32B6C682E1}' />
+    </window>
+    <window class='worksheet' name='Speed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0chhjyf1muzhj412kaf1w0pdt6kc].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D0B0F8D5-B58D-42BC-89DB-0FED4A40372B}' />
+    </window>
+    <window class='worksheet' name='Type1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4DED3EDC-BAFA-4C33-BA22-0DDEE172D68B}' />
+    </window>
+    <window class='worksheet' name='Type2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9734BCA5-BEF8-4F9C-8E87-89DE413D541F}' />
+    </window>
+    <window class='worksheet' name='Names'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9EB74FF7-5C1E-452F-9EF9-12288C0FA490}' />
+    </window>
+    <window class='worksheet' name='Overview'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BBB52AAC-B681-4AA3-A49C-7542FD148A43}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Attack'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg Attack'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg Defence'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg Speed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Defence'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Generations'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Overview'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Speed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Type1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Type2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{3AA11841-179E-4E3A-AA97-CAE218A1725A}' />
+    </window>
+    <window class='worksheet' name='Avg Attack'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A2025FFF-6690-4FBD-9B9A-FE9B03578EF0}' />
+    </window>
+    <window class='worksheet' name='Avg Defence'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{14A9990E-101E-45AD-8C00-87E18DC82E4B}' />
+    </window>
+    <window class='worksheet' name='Avg Speed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B2000B41-F8F1-459C-BE2D-66CC8AA16503}' />
+    </window>
+    <window class='worksheet' name='Generations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E6EF6344-000E-47CF-9FF2-4C2666D174D8}' />
+    </window>
+  </windows>
+</workbook>
